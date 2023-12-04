@@ -1,0 +1,23 @@
+* {
+  background-color: #19381F;
+  color: #EEE82C;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 60px;
+  }
+
+.bitcorn {
+  width: 10%;
+  height: 10%;
+  margin-left: 60px;
+  border: 3px solid black;
+}
+
+h1,
+h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+
+p {
+  margin-right: 200px;
+}
