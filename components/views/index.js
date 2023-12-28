@@ -1,3 +1,6 @@
-export { default as About } from "./About";
-export { default as Contact } from "./Contact";
-export { default as Bitmap } from "./Bitmap";
+import html from "html-literal";
+import * as views from "./views";
+
+export default () => html`
+  ${views[Home]()}, ${views[About]()}, ${views[Contact]()}, ${views[Bitmap]()},
+`;

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
-    "serve": "parcel index.html",
+    "serve": "parcel index.html"
   },
   "keywords": [],
   "author": "",
@@ -15,12 +15,13 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.1",
     "node": "^16.13.1",
-    "prettier": "1.19.1",
     "parcel": "^2.0.1",
+    "prettier": "1.19.1"
   },
   "dependencies": {
     "axios": "^1.6.2",
+    "html-literal": "^1.1.0",
     "parcel": "^2.10.3",
-    "yargs-parser": ">=13.1.2",
+    "yargs-parser": ">=13.1.2"
   }
 }
