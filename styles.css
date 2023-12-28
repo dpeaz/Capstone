@@ -1,8 +1,9 @@
 * {
   background-color: #19381F;
   color: #EEE82C;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 60px;
+  font-family: 'Arvo', serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
   }
 
 .bitcorn {
@@ -12,7 +13,7 @@
   border: 3px solid black;
 }
 
-h1,
+/* h1,
 h2 {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -20,4 +21,91 @@ h2 {
 
 p {
   margin-right: 200px;
+} */
+
+.myNav {
+  display: grid;
+  height: 50px;
+  background-color: #333;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
+.myNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.myNav li {
+  float: left;
+}
+.myNav li a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+}
+.myNav li a.active {
+  background-color: #3786E1;
+}
+
+.myFooter {
+  height: 150px;
+  display: grid;
+  background-color: #333;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.myFooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.myFooter li {
+  float: left;
+}
+.myFooter li a {
+  padding: 14px 16px;
+}
+.myFooter li a.active {
+  background-color: #3786E1;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 100px;
+
+  gap: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-text {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.content-image {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* .even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+} */
