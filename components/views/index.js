@@ -1,6 +1,4 @@
-import html from "html-literal";
-import * as views from "./views";
-
-export default () => html`
-  ${views[Home]()}, ${views[About]()}, ${views[Contact]()}, ${views[Bitmap]()},
-`;
+export { default as Header } from "../Header";
+export { default as Footer } from "../Footer";
+export { default as Main } from "../Main";
+export { default as Nav } from "../Nav";
