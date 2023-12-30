@@ -1,8 +1,8 @@
+/* eslint-disable prettier/prettier */
 import html from "html-literal";
-() => html`HTML template literal`;
 
-export { default as About } from "./About";
-
+export default () => html`
+<section>
 <h1>Bitcorns</h1>
 <img src="docs\media\004.png" class="bitcorn" />
 <h2>About Us</h2>
@@ -21,4 +21,5 @@ export { default as About } from "./About";
     to build a strong community. While cryptocurrency is an extremely volatile market, one of our
     primary goals is to generate sustainable revenue for the project in order to provide the best
     opportunity for our holders to be profitable by investing in our project.
-  </p>
+</p>
+</section>`;

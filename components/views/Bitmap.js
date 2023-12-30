@@ -1,17 +1,19 @@
+/* eslint-disable prettier/prettier */
+
+
 import html from "html-literal";
-() => html`HTML template literal`;
 
-export { default as Bitmap } from "./Bitmap";
-
+export default () => html`
+<section>
 <h1>Bitmap Floor Price Check</h1>
   <p>Enter Bitmap # or inscription ID in the search box. Results will show current Magic Eden
     floor price for each attribute to give you a better idea of the value of your Bitmap. This
-  tool will help mitigate underpricing your listings.</p></div>
+  tool will help mitigate underpricing your listings.</p>
   <form id="form" class="bitmap">
     <input type="search" id="bitmap" name="bitmap" placeholder="Bitmap # or Inscription ID">
     <button>Search</button>
   </form>
-<img src="bitmap.webp" height="250px" width="250px">
+<img src="bitmap.webp" height="250px" width="250px" />
 <table>
   <tr>
     <th colspan="2">Attributes</th>
@@ -93,4 +95,4 @@ export { default as Bitmap } from "./Bitmap";
     <td></td>
   </tr>
 </table>
-</div></div>
+</section>`

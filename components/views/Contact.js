@@ -1,11 +1,9 @@
+/* eslint-disable prettier/prettier */
+
 import html from "html-literal";
-() =>
-  html`
-    HTML template literal
-  `;
 
-export { default as Contact } from "./Contact";
-
+export default () => html`
+<section>
 <div class="content-text">
 <h1>Contact Us</h1>
 <br>
@@ -15,9 +13,7 @@ export { default as Contact } from "./Contact";
 <h2>Founder</h2>
 <br>
 <a href="https://twitter.com/dpeaz">dpeaz Twitter</a>
-</div></div>
-</body>
-</html>
+</div>
 
 <h3>If you are interested in collaboration opportunities, please submit your request below:</h3>
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgwnwnw" method="post">
@@ -32,3 +28,4 @@ export { default as Contact } from "./Contact";
   </fieldset>
   <input type="submit" value="Submit">
 </form>
+</section>`
