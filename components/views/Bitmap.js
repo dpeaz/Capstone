@@ -1,8 +1,9 @@
-fdimport html from "html-literal";
-() => html`HTML template literal`;
+/* eslint-disable prettier/prettier */
 
-export { default as Bitmap } from "./Bitmap";
 
+import html from "html-literal";
+
+export default () => html`
 <section>
 <h1>Bitmap Floor Price Check</h1>
   <p>Enter Bitmap # or inscription ID in the search box. Results will show current Magic Eden
@@ -94,6 +95,4 @@ export { default as Bitmap } from "./Bitmap";
     <td></td>
   </tr>
 </table>
-</form>
-</div>
-</section>
+</section>`

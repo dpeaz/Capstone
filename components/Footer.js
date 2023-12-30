@@ -1,14 +1,7 @@
-export default () => `
-<footer class="myFooter">
-  <div class="container">
-    <div class="even-columns">
-    <div><ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul></div>
-    </div></div>
-    <div class="container">
-Copyright Bitcorns 2023
-</div>
-</footer>`;
+import html from "html-literal";
+
+export default () => html`
+  <footer class="footer">
+    Copyright Bitcorns 2023
+  </footer>
+`;

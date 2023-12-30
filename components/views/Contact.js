@@ -1,11 +1,8 @@
+/* eslint-disable prettier/prettier */
+
 import html from "html-literal";
-() =>
-  html`
-    HTML template literal
-  `;
 
-export { default as Contact } from "./Contact";
-
+export default () => html`
 <section>
 <div class="content-text">
 <h1>Contact Us</h1>
@@ -31,4 +28,4 @@ export { default as Contact } from "./Contact";
   </fieldset>
   <input type="submit" value="Submit">
 </form>
-</section>
+</section>`

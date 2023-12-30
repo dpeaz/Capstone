@@ -1,11 +1,8 @@
+/* eslint-disable prettier/prettier */
+
 import html from "html-literal";
-() =>
-  html`
-    HTML template literal
-  `;
 
-export { default as Home } from "./Home";
-
+export default () => html`
 <section>
 <div class="content-text">
 <h1>Bitcorns</h1>
@@ -24,4 +21,4 @@ export { default as Home } from "./Home";
   <div class="content-image">
     <img src="docs\media\001.png" alt="" width="250" height="250">
   </div>
-</section>
+</section>`
