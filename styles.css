@@ -74,9 +74,9 @@ body {
   grid-column-end: 3;
 }
 
-/* @media (min-width: 50em) {
+@media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-  } */
+  }
 
