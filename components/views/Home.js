@@ -6,6 +6,7 @@ import html from "html-literal";
 
 export { default as Home } from "./Home";
 
+<section>
 <div class="content-text">
 <h1>Bitcorns</h1>
 <h2>Our Vision</h2>
@@ -19,8 +20,8 @@ export { default as Home } from "./Home";
     primary goals is to generate sustainable revenue for the project in order to provide the best
     opportunity for our holders to be profitable by investing in our project.
   </p>
-</div></section>
-<section>
+</div>
   <div class="content-image">
     <img src="docs\media\001.png" alt="" width="250" height="250">
   </div>
+</section>
