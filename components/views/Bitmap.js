@@ -4,17 +4,17 @@
 import html from "html-literal";
 
 export default () => html`
-<section>
-<h1>Bitmap Floor Price Check</h1>
+  <section>
+  <h1>Bitmap Floor Price Check</h1>
   <p>Enter Bitmap # or inscription ID in the search box. Results will show current Magic Eden
-    floor price for each attribute to give you a better idea of the value of your Bitmap. This
+  floor price for each attribute to give you a better idea of the value of your Bitmap. This
   tool will help mitigate underpricing your listings.</p>
   <form id="form" class="bitmap">
     <input type="search" id="bitmap" name="bitmap" placeholder="Bitmap # or Inscription ID">
     <button>Search</button>
   </form>
-<img src="bitmap.webp" height="250px" width="250px" />
-<table>
+  <img src="bitmap.webp" height="250px" width="250px" />
+  <table>
   <tr>
     <th colspan="2">Attributes</th>
     <th>Floor Price</th>
@@ -94,5 +94,6 @@ export default () => html`
     <td></td>
     <td></td>
   </tr>
-</table>
-</section>`
+  </table>
+  </section>
+`;

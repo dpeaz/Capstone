@@ -21,4 +21,4 @@ export default () => html`
   <div class="content-image">
     <img src="docs\media\001.png" alt="" width="250" height="250">
   </div>
-</section>`
+</section>`;
