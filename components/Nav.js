@@ -1,6 +1,13 @@
 import html from "html-literal";
 export default links => html`
-  <nav>
+
+  <nav class="navbar">
+    <a href="home.html"><img src="corn_kernel.png" alt="Bitcorns" width="50" height="50">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="bitmap.html">Bitmap</a>
+
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
       ${links
@@ -14,9 +21,5 @@ export default links => html`
 `;
 
 {
-  /* <nav class="nav">
-    <a href="index.html"><img src="docs\media\corn_kernel.png" alt="Bitcorns" width="50" height="50">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a> */
+  /*  */
 }

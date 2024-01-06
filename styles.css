@@ -18,7 +18,7 @@ body {
     grid-template-rows: 50px 1fr 100px;
     padding: 10px;
   }
-
+/*
   .header {
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@ body {
     justify-content: start;
     align-items: center;
     z-index: 100;
-  }
+  } */
 
   .navbar a {
     color: #FFFFFF;
