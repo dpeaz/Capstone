@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 
 import html from "html-literal";
+import bitcorn001 from "../../assets/001.png";
 
 export default () => html`
 <section>
@@ -18,7 +19,5 @@ export default () => html`
     opportunity for our holders to be profitable by investing in our project.
   </p>
 </div>
-  <div class="content-image">
-    <img src="docs\media\001.png" alt="" width="250" height="250">
-  </div>
+<img src="<img src="${bitcorn001}" alt="" width="250" height="250 />
 </section>`;
