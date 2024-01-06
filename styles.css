@@ -35,7 +35,7 @@ body {
   .navbar a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 18;
+    font-size: medium;
     font-weight: 700;
     margin: 25px;
     vertical-align: middle;
@@ -74,9 +74,61 @@ body {
   grid-column-end: 3;
 }
 
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+
+  #bio img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 1rem;
   }
 }
+
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+
+  #bio {
+    margin-right: 3rem;
+  }
