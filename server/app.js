@@ -1,5 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
+
 dotenv.config();
 
 // get the PORT from the environment variables, OR use 4040 as default
@@ -50,3 +52,17 @@ const cors = (req, res, next) => {
 };
 
 app.use(cors);
+
+mongoose.connect(process.env.MONGODB, {
+  // Configuration options to remove deprecation warnings, just include them to remove clutter
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Connection Error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
