@@ -6,77 +6,74 @@ body {
         background: radial-gradient(ellipse at center, #52B765 0%, #3B8449 0%, #19381F 100%);
         color: #EEE82C;
         font-family: 'Arvo', serif;
-        }
-
-  .container {
-    display: grid;
-    grid-gap: 30px;
-    margin-top: 50px;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 1fr 100px;
-    padding: 10px;
-  }
-
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: #19381f;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    z-index: 100;
-  }
+      }
 
   .navbar a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 18;
+    font-size: medium;
     font-weight: 700;
     margin: 25px;
     vertical-align: middle;
 }
 
+.navbar {
+  position: fixed;
+  background-color: #19381F;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  justify-content: start;
+  align-items: center;
+  z-index: 100;
+  }
+
+
+  @media (max-width: 550px) {
+    .hidden--mobile {
+      display: none;
+    }
+  }
+
+    nav > i {
+      padding: 1rem;
+      font-size: 2em;
+    }
+
+    nav > ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 0;
+    }
+
+  @media (min-width: 550px) {
+    nav > ul {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0 0;
+    }
+
+    nav > .fa-bars {
+      display: none;
+    }
+
+.main-content {
+  margin-top: 100px;
+  margin-left: 75px;
+}
+
 .bitcorn {
-  width: 10%;
-  height: 10%;
+  width: 13em;
+  height: 13em;
   margin-left: 60px;
   border: 3px solid black;
 }
 
-.content-text {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  padding: 30px;
-}
-
-.content-image {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  padding: 50px;
-}
-
 .footer {
   height: 150px;
-  display: grid;
-  background-color: #333;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
+  display: flex;
+  justify-content: center;
 }

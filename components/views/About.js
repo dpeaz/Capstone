@@ -1,10 +1,12 @@
 /* eslint-disable prettier/prettier */
 import html from "html-literal";
+import bitcorn004 from "../../assets/004.png";
 
 export default () => html`
 <section>
+  <div class="main-content">
 <h1>Bitcorns</h1>
-<img src="docs\media\004.png" class="bitcorn" />
+<img src="${bitcorn004}" class="bitcorn" alt="" />
 <h2>About Us</h2>
 <p>Bitcorns are 100 pixelated profile pictures inscribed as data on the bitcoin blockchain. Bitcorns
   are among the first ever inscriptions on bitcoin, inscribed in the 39k-47k range. As of today,
@@ -21,5 +23,5 @@ export default () => html`
     to build a strong community. While cryptocurrency is an extremely volatile market, one of our
     primary goals is to generate sustainable revenue for the project in order to provide the best
     opportunity for our holders to be profitable by investing in our project.
-</p>
+</p></div>
 </section>`;

@@ -1,12 +1,14 @@
 /* eslint-disable prettier/prettier */
 
 import html from "html-literal";
+import bitcorn001 from "../../assets/001.png";
 
 export default () => html`
 <section>
-<div class="content-text">
+<div class="main-content">
 <h1>Bitcorns</h1>
 <h2>Our Vision</h2>
+<img src="${bitcorn001}" alt="" width="250" height="250" />
 <p>We believe that Bitcoin and Ordinals should (and can) be fun and profitable while fostering a
   strong community where holders help one another instead of creating a PvP environment.</p>
   <p>
@@ -18,7 +20,4 @@ export default () => html`
     opportunity for our holders to be profitable by investing in our project.
   </p>
 </div>
-  <div class="content-image">
-    <img src="docs\media\001.png" alt="" width="250" height="250">
-  </div>
-</section>`
+</section>`;
