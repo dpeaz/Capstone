@@ -61,8 +61,12 @@ body {
     }
 
 .main-content {
-  margin-top: 100px;
-  margin-left: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 125px;
+  gap: 10px;
 }
 
 .bitcorn {
@@ -77,4 +81,12 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 150px;
+}
+
+#form.bitmap input[type="search"] {
+  width: 300px;
+}
+
+p {
+  width: 75%;
 }

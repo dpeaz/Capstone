@@ -7,12 +7,12 @@ export default () => html`
   <section>
     <div class="main-content">
   <h1>Bitmap Floor Price Check</h1>
-  <p>Enter Bitmap # or inscription ID in the search box. Results will show current Magic Eden
-  floor price for each attribute to give you a better idea of the value of your Bitmap. This
-  tool will help mitigate underpricing your listings.</p>
+  <p>Enter Bitmap # or inscription ID in the search box. Request will return current Magic Eden
+  floor price for each attribute of your request Bitmap inscription to provide more insight to the
+  value of your Bitmap. This tool will help mitigate underpricing your listings.</p>
   <form id="form" class="bitmap">
     <input type="search" id="bitmap" name="bitmap" placeholder="Bitmap # or Inscription ID">
-    <button>Search</button>
+    <button>Submit</button>
   </form>
   <img src="bitmap.webp" height="250px" width="250px" />
   <table>
