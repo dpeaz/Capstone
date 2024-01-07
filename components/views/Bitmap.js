@@ -5,6 +5,7 @@ import html from "html-literal";
 
 export default () => html`
   <section>
+    <div class="main-content">
   <h1>Bitmap Floor Price Check</h1>
   <p>Enter Bitmap # or inscription ID in the search box. Results will show current Magic Eden
   floor price for each attribute to give you a better idea of the value of your Bitmap. This
@@ -95,5 +96,6 @@ export default () => html`
     <td></td>
   </tr>
   </table>
+</div>
   </section>
 `;

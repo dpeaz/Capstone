@@ -4,7 +4,7 @@ import html from "html-literal";
 
 export default () => html`
 <section>
-<div class="content-text">
+<div class="main-content">
 <h1>Contact Us</h1>
 <br>
 <a href="https://bitcorns.xyz">Official Website</a><br>
@@ -15,7 +15,7 @@ export default () => html`
 <a href="https://twitter.com/dpeaz">dpeaz Twitter</a>
 </div>
 
-<h3>If you are interested in collaboration opportunities, please submit your request below:</h3>
+<p>If you are interested in collaboration opportunities, please submit your request below:</p>
 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgwnwnw" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="project">Project</label><br>
