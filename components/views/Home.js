@@ -8,7 +8,7 @@ export default () => html`
 <div class="content-text">
 <h1>Bitcorns</h1>
 <h2>Our Vision</h2>
-<img src="${bitcorn001}" alt="" width="250" height="250 />
+<img src="${bitcorn001}" alt="" width="250" height="250" />
 <p>We believe that Bitcoin and Ordinals should (and can) be fun and profitable while fostering a
   strong community where holders help one another instead of creating a PvP environment.</p>
   <p>
