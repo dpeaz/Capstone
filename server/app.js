@@ -4,21 +4,13 @@ import mongoose from "mongoose";
 
 dotenv.config();
 
-// get the PORT from the environment variables, OR use 4040 as default
 const PORT = process.env.PORT || 4040;
-// Initialize the Express application
 const app = express();
 
-// Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
-  // Create the headers for response by default 200
-  // Create the response body
-  // End and return the response
   response.send(JSON.stringify({ message: "Service healthy" }));
 });
 
-// Tell the Express app to start listening
-// Let the humans know I am running and listening on 4040
 app.listen(4040, () => console.log("Listening on port 4040"));
 
 app
@@ -29,12 +21,6 @@ app
   .post((request, response) => {});
 
 app.use(express.json());
-
-/*
-    express supports chaining `use()` statements,
-    so the above 2 statements could look like this as well
-    app.use(express.json()).use(logging)
-  */
 
 // CORS Middleware
 const cors = (req, res, next) => {
