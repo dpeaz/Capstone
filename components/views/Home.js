@@ -5,7 +5,7 @@ import bitcorn001 from "../../assets/001.png";
 
 export default () => html`
 <section>
-<div class="content-text">
+<div class="main-content">
 <h1>Bitcorns</h1>
 <h2>Our Vision</h2>
 <img src="${bitcorn001}" alt="" width="250" height="250" />

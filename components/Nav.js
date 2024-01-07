@@ -6,6 +6,8 @@ export default links => html`
     <a href="/" title="Home">
       <img src="${cornKernel}" alt="" width="50em" height="50em" />
     </a>
+    <i class="fas fa-bars"></i>
+    <ul class="hidden--mobile nav-links"></ul>
     ${links
       .map(
         link =>
