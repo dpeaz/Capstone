@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import bitmaps from "./routers/bitmap.js";
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ app.get("/status", (request, response) => {
 app.listen(4040, () => console.log("Listening on port 4040"));
 
 app
-  .route("/pizzas")
+  .route("/bitmap")
   .get((request, response) => {
     // handle GET request
   })
@@ -38,6 +39,7 @@ const cors = (req, res, next) => {
 };
 
 app.use(cors);
+app.use("/bitmaps", bitmaps);
 
 mongoose.connect(process.env.MONGODB, {
   // Configuration options to remove deprecation warnings, just include them to remove clutter
