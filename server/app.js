@@ -1,26 +1,27 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import bitmaps from "./routers/bitmap.js";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 4040;
 const app = express();
 
-app.get("/status", (request, response) => {
-  response.send(JSON.stringify({ message: "Service healthy" }));
+mongoose.connect(process.env.MONGODB, {
+  // Configuration options to remove deprecation warnings, just include them to remove clutter
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
-app.listen(4040, () => console.log("Listening on port 4040"));
+const db = mongoose.connection;
 
-app
-  .route("/pizzas")
-  .get((request, response) => {
-    // handle GET request
-  })
-  .post((request, response) => {});
+db.on("error", console.error.bind(console, "Connection Error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
 
-app.use(express.json());
+const PORT = process.env.PORT || 4040;
 
 // CORS Middleware
 const cors = (req, res, next) => {
@@ -37,18 +38,23 @@ const cors = (req, res, next) => {
   next();
 };
 
-app.use(cors);
+// Logging Middleware
+const logging = (request, response, next) => {
+  console.log(
+    `${request.method} ${request.url} ${new Date().toLocaleString("en-us")}`
+  );
+  next();
+};
 
-mongoose.connect(process.env.MONGODB, {
-  // Configuration options to remove deprecation warnings, just include them to remove clutter
-  useNewUrlParser: true,
-  useUnifiedTopology: true
+app.use(cors);
+app.use(express.json());
+app.use(logging);
+
+// Request handlers go here
+app.get("/status", (request, response) => {
+  response.status(200).json({ message: "Service healthy" });
 });
 
-const db = mongoose.connection;
+app.use("/bitmaps", bitmaps);
 
-db.on("error", console.error.bind(console, "Connection Error:"));
-db.once(
-  "open",
-  console.log.bind(console, "Successfully opened connection to Mongo!")
-);
+app.listen(4040, () => console.log("Listening on port 4040"));
